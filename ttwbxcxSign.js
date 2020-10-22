@@ -5,15 +5,17 @@
 
 打开支付宝搜索，体验机蜜天天挖矿-每日领现金抽大奖小程序
 
-说明:
+***************************
+Quantumult X远程脚本配置：
+***************************
+[rewrite_local]
+^https:\/\/operation-api\.jimistore\.com\/* url script-request-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/ttwbxcxSign.js
 
-圈x:本地
-签到获取ck
-^https:\/\/operation-api\.jimistore\.com\/* url script-request-body ttwbxcxSign.js
+[task_loacl]
+0 10 0 * * * https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/ttwbxcxSign.js, tag=天天挖矿小程序, enabled=true
 
- 0 10 0 * * * ttwbxcxSign.js, tag=天天挖矿小程序, enabled=true
-
-MITM= operation-api.jimistore.com
+[MITM]
+hostname= operation-api.jimistore.com
 
 */
 
