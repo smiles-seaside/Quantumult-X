@@ -4,7 +4,7 @@
 
 [task_local]
 # 京东全民营业
-5 9-22 * * * https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_bigWinner.js, tag=京东大赢家, img-url=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/image/jd.png, enabled=true
+5 9-22 * * * https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/jd_bigWinner.js, tag=京东全民营业, enabled=true
 */
 const $ = new Env('京东全民营业');
 //Node.js用户请在jdCookie.js处填写京东ck;
