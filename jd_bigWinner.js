@@ -1,12 +1,12 @@
 /*
-京东大赢家 双11活动
+京东全民营业
 更新时间：2020-10-29 16:16
 
 [task_local]
-# 京东大赢家
+# 京东全民营业
 5 9-22 * * * https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_bigWinner.js, tag=京东大赢家, img-url=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/image/jd.png, enabled=true
 */
-const $ = new Env('京东大赢家');
+const $ = new Env('京东全民营业');
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 //IOS等用户直接用NobyDa的jd cookie
@@ -416,7 +416,7 @@ function qryViewkitCallbackResult(taskBody,timeout = 0) {
 }
 
 //群组助力
-function stall_pk_assistGroup(inviteId = "XUkkFpUhDG0OdMYzp22uY_lyEaiFin-OxTLmhqosoNJHNIHp84xOJxNmUElr71w",timeout = 0) {
+function stall_pk_assistGroup(inviteId = "XUkkFpUhDG0Veaw9oWeuZrfzl5eoENx0xPEBbzMsz9raUYf7Dw",timeout = 0) {
   return new Promise((resolve) => {
     setTimeout( ()=>{
       let url = {
@@ -486,7 +486,7 @@ function stall_getHomeData(body= "",timeout = 0) {
             //console.log('stall_getHomeData:' + JSON.stringify(data))
             secretp = data.data.result.homeMainInfo.secretp
             if (data.data.result.homeMainInfo.raiseInfo.buttonStatus === 2 ) await stall_raise()
-            await stall_getHomeData('Vl4ISNZnRyNVJf028W76ZuyTXfbtGlbVhbQEF3XxyFux9uadYgA0uao');
+            await stall_getHomeData('TVNiRtBtRyZdJKF46x7KPJ7XTweklJuLmoc0Nhs');
             await stall_getTaskDetail()
           } else {
             return
