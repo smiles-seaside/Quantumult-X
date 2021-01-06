@@ -35,6 +35,10 @@ obj = {
       { memberid: 20, name: "WPS会员", expire_time: 1631619709 },
       { memberid: 12, name: "稻壳会员", expire_time: 1631619709 }
     ]
+  vips: [
+      { name: "WPS会员", has_ad: 0, memberid: 20, expire_time: 1631619709, enabled: null },
+      { name: "稻壳会员", has_ad: 0, memberid: 12, expire_time: 1631619709, enabled: null },
+    ]
   },
   wealth: 0
 };
