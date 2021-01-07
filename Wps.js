@@ -14,9 +14,8 @@ var obj = JSON.parse($response.body);
 var id = obj.userid;
 
 obj = {
-  is_docer_vip: 1,
-  free_times: 240,
-  name: "丶小夜愿",
+  data: { is_docer_vip: 1,
+  free_times: 240};
   exp: 0,
   level: 3,
   privilege: [
