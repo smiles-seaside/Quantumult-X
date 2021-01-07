@@ -35,8 +35,8 @@ obj = {
       { memberid: 20, name: "WPS会员", expire_time: 1631619709 },
       { memberid: 12, name: "稻壳会员", expire_time: 1631619709 }
     ] 
+    wealth: 0,
   },
-  wealth: 0,
   expire_time: 1631619709
 };
 
