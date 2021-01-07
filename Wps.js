@@ -14,9 +14,6 @@ var obj = JSON.parse($response.body);
 var id = obj.userid;
 
 obj = {
-  data: { 
-    is_docer_vip: 1,
-    free_times: 240},
   exp: 0,
   level: 3,
   privilege: [
@@ -44,7 +41,6 @@ obj = {
   },
   wealth: 0,
   expire_time: 1631619709
-  
 };
 
 obj.userid = id;
