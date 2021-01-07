@@ -41,7 +41,8 @@ obj = {
   },
   wealth: 0,
   expire_time: 1631619709,
-  is_docer_vip: 1
+  is_docer_vip: 1,
+  free_times: 240
 };
 
 obj.userid = id;
