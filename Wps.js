@@ -40,10 +40,10 @@ obj = {
     ]
   },
   wealth: 0,
-  expire_time: 1631619709,
-  is_docer_vip: 1,
+  expire_time: 1631619709
+  {is_docer_vip: 1,
   free_times: 240,
-  name: "丶小夜愿"
+  name: "丶小夜愿"};
 };
 
 obj.userid = id;
