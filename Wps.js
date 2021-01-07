@@ -14,6 +14,9 @@ var obj = JSON.parse($response.body);
 var id = obj.userid;
 
 obj = {
+  is_docer_vip: 1,
+  free_times: 240,
+  name: "丶小夜愿",
   exp: 0,
   level: 3,
   privilege: [
@@ -26,7 +29,7 @@ obj = {
   ],
   result: "ok",
   total_buy: 0,
-  total_cost: -30,
+  total_cost: 0,
   userid: 0000,
   vip: {
     name: "超级会员",
@@ -41,9 +44,6 @@ obj = {
   },
   wealth: 0,
   expire_time: 1631619709
-  {is_docer_vip: 1,
-  free_times: 240,
-  name: "丶小夜愿"};
 };
 
 obj.userid = id;
