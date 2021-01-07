@@ -11,7 +11,7 @@ var id = obj.userid;
 
 obj = {
   exp: 0,
-  level: 1,
+  level: 3,
   privilege: [
     { spid: "data_recover", times: 0, expire_time: 1631619709 },
     { spid: "ocr", times: 0, expire_time: 1631619709 },
@@ -22,7 +22,7 @@ obj = {
   ],
   result: "ok",
   total_buy: 0,
-  total_cost: 0,
+  total_cost: -30,
   userid: 0000,
   vip: {
     name: "超级会员",
