@@ -36,11 +36,8 @@ obj = {
       { memberid: 12, name: "稻壳会员", expire_time: 1631619709 }
     ] 
   },
-  wealth: 0
-  vips: [
-      { name: "WPS会员", has_ad: 0, emberid: 20, expire_time: 1631619709, enabled: null },
-      { name: "稻壳会员", has_ad: 0, memberid: 12, expire_time: 1631619709, enabled: null },
-    ]
+  wealth: 0,
+  expire_time: 1631619709
 };
 
 obj.userid = id;
