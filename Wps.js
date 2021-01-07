@@ -1,5 +1,3 @@
-/*
-QX
 [Script]
 http-response ^https?:\/\/account\.wps\.cn\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/eHpo1/Surge/master/Script/wps.js
 
@@ -27,17 +25,19 @@ obj = {
   total_cost: 0,
   userid: 0000,
   vip: {
-    name: "WPS会员",
+    name: "超级会员",
     has_ad: 0,
-    memberid: 20,
+    memberid: 40,
     expire_time: 1631619709,
     enabled: [
+      { memberid: 40, name: "超级会员", expire_time: 1631619709 },
       { memberid: 20, name: "WPS会员", expire_time: 1631619709 },
       { memberid: 12, name: "稻壳会员", expire_time: 1631619709 }
-    ] 
-    wealth: 0,
+    ]
   },
-  expire_time: 1631619709
+  wealth: 0,
+  expire_time: 1631619709,
+  is_docer_vip: 1
 };
 
 obj.userid = id;
