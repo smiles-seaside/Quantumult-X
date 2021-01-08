@@ -1,7 +1,7 @@
 var obj = JSON.parse($response.body);
 
 var id = obj.userid;
- 
+
 obj = {
   name: "丶小夜愿",
   exp: 0,
