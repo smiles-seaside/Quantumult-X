@@ -4,6 +4,9 @@ var id = obj.userid;
 
 obj = {
   name: "丶小夜愿",
+  is_docer_vip: 1,
+  free_times: 240,
+  
   exp: 0,
   level: 3,
   privilege: [
