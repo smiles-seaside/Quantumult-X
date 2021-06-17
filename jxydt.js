@@ -10,7 +10,7 @@ var obj = JSON.parse($response.body);
       "beginTime": "2021-06-16",
       "endTime": "2022-06-16",
       "deviceOverflow": "0",
-      "status": "5",
+      "status": "1",
       "overdueSecond": "-1"
     },
     "RELIABLE_VIP_KM4": {
