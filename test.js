@@ -13,7 +13,7 @@ var obj = {
     "rebate_money" : "0",
     "isfaka" : 0,
     "share_ma" : "440581",
-    "vip_type" : 3,
+    "vip_type" : 1,
     "team_num" : 0,
     "admin_weichat" : "请联系上级",
     "id" : 640870,
