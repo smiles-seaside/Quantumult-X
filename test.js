@@ -13,12 +13,12 @@ var obj = {
     "rebate_money" : "0",
     "isfaka" : 0,
     "share_ma" : "440581",
-    "vip_type" : 1,
-    "team_num" : 1,
+    "vip_type" : 3,
+    "team_num" : 0,
     "admin_weichat" : "请联系上级",
     "id" : 640870,
-    "sign" : 124568,
-    "power" : "1",
+    "sign" : 17,
+    "power" : "2",
     "email" : null,
     "zfb" : "",
     "user_nick_name" : "",
@@ -26,7 +26,7 @@ var obj = {
     "password" : "8c93b91c4ca1133b98fc6ec65b83ce45",
     "vip_time" : 1836269062,
     "txje" : 0,
-    "username" : "13721234567"
+    "username" : "18888888888"
   }
 };
 
