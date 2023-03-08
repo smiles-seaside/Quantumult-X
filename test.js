@@ -17,7 +17,7 @@ var obj = {
     "team_num" : 1,
     "admin_weichat" : "请联系上级",
     "id" : 640870,
-    "sign" : 17,
+    "sign" : 124568,
     "power" : "1",
     "email" : null,
     "zfb" : "",
