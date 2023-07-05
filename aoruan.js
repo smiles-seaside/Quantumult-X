@@ -5,15 +5,16 @@
 
 [rewrite_local]
 
-^https?:\/\/.*\.aoscdn\.com\/base\/vip\/client\/authorizations url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/aoruan.js
+^https://awvp.apsapp.cn/base/vip/v2/vips url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/aoruan.js
 
 [mitm] 
 
-hostname = *.aoscdn.com
+hostname = awvp.apsapp.cn
 
 *************************************/
 
-var chxm1023 = {
+var body = JSON.parse($response.body);
+var obj = {
   "status" : 200,
   "message" : "success",
   "data" : {
@@ -32,5 +33,7 @@ var chxm1023 = {
     "status" : 1,
     "coin" : 0
   }
-}
-$done({body: JSON.stringify(chxm1023)});
+};
+
+$done({ body: JSON.stringify(obj) });
+
