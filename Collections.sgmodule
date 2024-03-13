@@ -3,32 +3,32 @@
 
 [Script]
 # WPS解锁
-Wps = type=http-response,pattern=^https://account.wps.*/api/users/ url script-response-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/Wps.js
+Wps = type=http-response,pattern=^https://account.wps.*/api/users/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/Wps.js
 
 # 作者-伟人
 # 漫客栈
-mankezhan = type=http-response,pattern=^https?:\/\/(member|comic|base).mkzcdn.com\/(user|chapter\/buy\/add|vote\/add|gift\/play\/add|advert\/app\/(read|user|task)).*$ url script-response-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/mankezhan.js
-mkztk = type=http-response,pattern=^https?:\/\/(comic|story).mkzcdn.com\/chapter\/(content\/v1|read\/check).*$ url script-request-header https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/mkztk.js
+mankezhan = type=http-response,pattern=^https?:\/\/(member|comic|base).mkzcdn.com\/(user|chapter\/buy\/add|vote\/add|gift\/play\/add|advert\/app\/(read|user|task)).*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/mankezhan.js
+mkztk = type=http-response,pattern=^https?:\/\/(comic|story).mkzcdn.com\/chapter\/(content\/v1|read\/check).*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/mkztk.js
 
 # 喜马拉雅
-xmly = type=http-response,pattern=^https?:\/\/.+((ximalaya)|(xmcdn)).+(mobile-user\/v2|mobile-web|queryCategoryPageData|discovery-feed\/v4|vip\/v1\/recommand|product\/detail\/v1|mobile\/v1\/album|playpage|album\/price\/ts).*$ url script-response-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/xmly.js
-xmtk = type=http-response,pattern=^https?:\/\/.+((ximalaya)|(xmcdn)).+\/[a-z]{6}\-[a-z]{8}\/track\/(v[0-9])\/[a-zA-Z]+\/ts.*$ url script-request-header https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/xmtk.js
+xmly = type=http-response,pattern=^https?:\/\/.+((ximalaya)|(xmcdn)).+(mobile-user\/v2|mobile-web|queryCategoryPageData|discovery-feed\/v4|vip\/v1\/recommand|product\/detail\/v1|mobile\/v1\/album|playpage|album\/price\/ts).*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/xmly.js
+xmtk = type=http-response,pattern=^https?:\/\/.+((ximalaya)|(xmcdn)).+\/[a-z]{6}\-[a-z]{8}\/track\/(v[0-9])\/[a-zA-Z]+\/ts.*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/xmtk.js
 
 # xboy
-xboy = type=http-response,pattern=^https?:\/\/(.*x-boy|.*xo2xo).live/api\/(movie\/DetailInfo|Account\/IndexDetail|movie\/watch|VersionIosNew).*$ url script-response-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/xboy.js
+xboy = type=http-response,pattern=^https?:\/\/(.*x-boy|.*xo2xo).live/api\/(movie\/DetailInfo|Account\/IndexDetail|movie\/watch|VersionIosNew).*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/xboy.js
 
 # 懒人听书
-lrts = type=http-response,pattern=^https?:\/\/(shapi|gzapi).mting.info\/yyting\/(usercenter\/ThirdPartyLogin|userclient\/ClientGetUserInfo).action url script-response-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/lrts.js
+lrts = type=http-response,pattern=^https?:\/\/(shapi|gzapi).mting.info\/yyting\/(usercenter\/ThirdPartyLogin|userclient\/ClientGetUserInfo).action,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/lrts.js
 
 # 快影
-kuaiy = type=http-response,pattern=^https?:\/\/(id\.kwaiying|api\.kmovie\.gifshow)\.com.*$ url script-response-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/kuaiy.js
+kuaiy = type=http-response,pattern=^https?:\/\/(id\.kwaiying|api\.kmovie\.gifshow)\.com.*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/kuaiy.js
 
 # 芒果TV
-mgtv = type=http-response,pattern=^https?:\/\/.*mgtv.com.*(GetUserInfo|module\/list\?_support|app\/bdboot|pullReleaseInfo|floor\/detail|video\/source|entry\?_support).*$ url script-response-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/mgtv.js
-mgtk = type=http-response,pattern=^https?:\/\/mobile-stream\.api\.mgtv\.com\/v1\/video\/source\? url script-request-header https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/mgtk.js
+mgtv = type=http-response,pattern=^https?:\/\/.*mgtv.com.*(GetUserInfo|module\/list\?_support|app\/bdboot|pullReleaseInfo|floor\/detail|video\/source|entry\?_support).*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/mgtv.js
+mgtk = type=http-response,pattern=^https?:\/\/mobile-stream\.api\.mgtv\.com\/v1\/video\/source\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/mgtk.js
 
 # 小影
-xiaoying = type=http-response,pattern=^https?:\/\/api-chn.rthdo.com\/api\/rest\/u\/vipVerifyReceipt.*$ url script-response-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/xiaoying.js
+xiaoying = type=http-response,pattern=^https?:\/\/api-chn.rthdo.com\/api\/rest\/u\/vipVerifyReceipt.*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/xiaoying.js
 
 # > 网易云音乐黑胶vip
 # 播放器会员皮肤
@@ -47,46 +47,46 @@ wyy7 = type=http-response,pattern=^https?:\/\/interface3?\.music\.163\.com\/eapi
 wyy8 = type=http-response,pattern=^https?:\/\/interface3?\.music\.163\.com\/eapi\/vipauth\/app\/auth\/(soundquality\/)?query,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
 
 # 微信读书
-wxds = type=http-response,pattern=^https?:\/\/i.weread.qq.com\/(login|pay\/balance|user\/profile).*$ url script-response-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/wxds.js
+wxds = type=http-response,pattern=^https?:\/\/i.weread.qq.com\/(login|pay\/balance|user\/profile).*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/wxds.js
 
 # 网易蜗牛读书解锁会员
-wnyd = type=http-response,pattern=^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url script-response-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/wnyd.js
+wnyd = type=http-response,pattern=^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/wnyd.js
 
 [URL Rewrite]
 # YouTube视频广告请求
-(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) url 302 $1$2$3
-^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad url reject-200
+#(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) url 302 $1$2$3
+#^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad url reject-200
 
 # 新版YouTube去广告 
-^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence)\? url script-request-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/youtube.request.beta.js
-^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\? url script-response-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/youtube.response.beta.js
+#^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence)\? url script-request-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/youtube.request.beta.js
+#^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\? url script-response-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/youtube.response.beta.js
 
 # YouTube通用广告请求
-^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads url reject-200
-^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) url reject-200
-^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext url reject-200
+#^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads url reject-200
+#^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) url reject-200
+#^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext url reject-200
 
 # 喜马拉雅
-^https?://openapi\.mysteel\.com/v5/getAdv.htm url reject
-^https?://.*logs.umeng.com url reject
-^https?://.*slbali.ximalaya.com url reject
-^https?://adse\.ximalaya\.com url reject
-^https?://.*gslbtx.ximalaya.com url reject
-^https?://.*location.ximalaya.com url reject
-^https?://.*assport.ximalaya.com url reject
-^https?://.*dbehavior.ximalaya.com url reject
-^https?://ad.ximalaya.com url reject
-^https?://.*audid-api.taobao.com url reject
+#^https?://openapi\.mysteel\.com/v5/getAdv.htm url reject
+#^https?://.*logs.umeng.com url reject
+#^https?://.*slbali.ximalaya.com url reject
+#^https?://adse\.ximalaya\.com url reject
+#^https?://.*gslbtx.ximalaya.com url reject
+#^https?://.*location.ximalaya.com url reject
+#^https?://.*assport.ximalaya.com url reject
+#^https?://.*dbehavior.ximalaya.com url reject
+#^https?://ad.ximalaya.com url reject
+#^https?://.*audid-api.taobao.com url reject
 
 # 快影
-^https://api\.kmovie\.gifshow\.com/rest/n/kmovie/app/merchant/ad/bidding url reject
-^https://mi\.gdt\.qq\.com/gdt_mview\.fcg url reject
+#^https://api\.kmovie\.gifshow\.com/rest/n/kmovie/app/merchant/ad/bidding url reject
+#^https://mi\.gdt\.qq\.com/gdt_mview\.fcg url reject
 
 # 芒果TV
-^https?://mobile.da.mgtv.com\/m\/page url reject
+#^https?://mobile.da.mgtv.com\/m\/page url reject
 
 # 微信读书
-^https://i\.weread\.qq\.com/updateConfig url reject
+#^https://i\.weread\.qq\.com/updateConfig url reject
 
 [MITM]
 hostname = %APPEND% www.google.cn,api.gotokeep.com,i.weread.qq.com,*mgtv.com,*account.wps.cn,api-chn.rthdo.com,gzapi.mting.info,shapi.mting.info,*x-boy.*,api.kmovie.gifshow.com,id.kwaiying.com,mi.gdt.qq.com,*.xo2xo.live,member.mkzcdn.com,comic.mkzcdn.com,base.mkzcdn.com,story.mkzcdn.com, *account.wps.com,p.du.163.com,vip.lovejdy.com,*.music.163.com,api-pay.soulapp.cn, api-user.soulapp.cn, api-chat.soulapp.cn, 8.210.3.170, 47.96.7.91, 47.96.11.46, 47.96.20.45, 47.98.54.106, 47.98.137.249, 114.215.255.94, 118.31.7.235, 118.31.112.221, 120.55.55.115, 120.55.62.124, 121.196.197.147, 121.196.203.183,-redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com,*.mysteel.*,61.172.194.196,180.153.*.*,*xima*,*xmcdn*,*.ximalaya.com,*.xmcdn.com,180.153.255.*,180.153.140.*,180.153.250.*,114.80.99.*,114.80.139.237,114.80.161.29,1.62.62.64,51*.com,1.194.255.171, 23.236.99.89, 36.99.200.135, 42.81.4.198, 42.81.26.128, 42.81.120.58, 43.132.80.77, 43.132.83.175, 43.132.84.11, 43.152.24.12, 43.152.24.18, 43.152.25.127, 43.152.29.38, 43.175.16.34, 43.175.22.25, 43.175.44.15, 49.7.69.197, 49.51.224.95, 101.33.11.32, 101.33.11.106, 101.33.20.34, 101.33.29.110, 103.105.60.99, 114.80.99.90, 114.80.99.70, 114.80.99.71, 114.80.99.89, 114.80.99.91, 114.80.99.88, 114.80.99.87, 140.249.84.135, 140.249.85.189, 150.109.90.80, 150.109.91.35, 150.138.47.94, 150.138.136.145, 203.205.136.87, 203.205.136.100, 203.205.136.102, 203.205.136.159, 203.205.137.27, 203.205.137.87, 203.205.137.241, 203.205.250.111, 203.205.250.113, 211.152.137.25
