@@ -1,3 +1,6 @@
+#!url=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/Collections.sgmodule
+#!name=App解锁合集
+
 [Script]
 # WPS解锁
 Wps = type=http-response,pattern=^https://account.wps.*/api/users/ url script-response-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/Wps.js
