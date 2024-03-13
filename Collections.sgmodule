@@ -30,21 +30,21 @@ mgtk = type=http-response,pattern=^https?:\/\/mobile-stream\.api\.mgtv\.com\/v1\
 # 小影
 xiaoying = type=http-response,pattern=^https?:\/\/api-chn.rthdo.com\/api\/rest\/u\/vipVerifyReceipt.*$ url script-response-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/xiaoying.js
 
-# 网易云音乐黑胶vip
+# > 网易云音乐黑胶vip
 # 播放器会员皮肤
-wyy = type=http-response,pattern=^https:\/\/interface3?\.music\.163\.com\/eapi\/playermode,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/wyy.js
+wyy = type=http-response,pattern=^https:\/\/interface3?\.music\.163\.com\/eapi\/playermode\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
 # 搜索结果会员歌曲
-wyy2 = type=http-response,pattern=^https:\/\/interface3?\.music\.163\.com\/eapi\/search\/complex\/(page|rec\/song\/get),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/wyy.js
+wyy2 = type=http-response,pattern=^https:\/\/interface3?\.music\.163\.com\/eapi\/search\/complex\/(page|rec\/song\/get),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
 # 播放器会员歌曲
-wyy3 = type=http-response,pattern=^https:\/\/interface3?\.music\.163\.com\/eapi\/v3\/song\/detail,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/wyy.js
-wyy4 = type=http-response,pattern=^https:\/\/interface3?\.music\.163\.com\/eapi\/song\/(chorus|enhance\/|play\/|type\/detail\/get),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/wyy.js
-wyy5 = type=http-response,pattern=^https:\/\/interface3?\.music\.163\.com\/eapi\/(v1\/artist\/top\/song|v3\/discovery\/recommend\/songs),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/wyy.js
+wyy3 = type=http-response,pattern=^https:\/\/interface3?\.music\.163\.com\/eapi\/v3\/song\/detail,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
+wyy4 = type=http-response,pattern=^https:\/\/interface3?\.music\.163\.com\/eapi\/song\/(chorus|enhance\/|play\/|type\/detail\/get),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
+wyy5 = type=http-response,pattern=^https:\/\/interface3?\.music\.163\.com\/eapi\/(v1\/artist\/top\/song|v3\/discovery\/recommend\/songs),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
 # 侧边栏会员等级
-wyy6 = type=http-response,pattern=^https:\/\/interface3?\.music\.163\.com\/eapi\/vipnewcenter\/app\/resource\/newaccountpage,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/wyy.js
+wyy6 = type=http-response,pattern=^https:\/\/interface3?\.music\.163\.com\/eapi\/vipnewcenter\/app\/resource\/newaccountpage,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
 # 首页歌单会员歌曲
-wyy7 = type=http-response,pattern=^https?:\/\/interface3?\.music\.163\.com\/eapi\/(homepage\/|v6\/)?playlist,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/wyy.js
+wyy7 = type=http-response,pattern=^https?:\/\/interface3?\.music\.163\.com\/eapi\/(homepage\/|v6\/)?playlist\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
 # 会员认证
-wyy8 = type=http-response,pattern=^https?:\/\/interface3?\.music\.163\.com\/eapi\/vipauth\/app\/auth\/(soundquality\/)?query,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/wyy.js
+wyy8 = type=http-response,pattern=^https?:\/\/interface3?\.music\.163\.com\/eapi\/vipauth\/app\/auth\/(soundquality\/)?query,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
 
 # 微信读书
 wxds = type=http-response,pattern=^https?:\/\/i.weread.qq.com\/(login|pay\/balance|user\/profile).*$ url script-response-body https://raw.githubusercontent.com/smiles-seaside/Quantumult-X/main/wxds.js
